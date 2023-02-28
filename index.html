@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex 布局</title>
+    <style>
+        body{
+            margin: 0;
+            height: 100vh;
+            background-color: #eee;
+        }
+        *{
+            border: 1px solid black;
+        }
+        .flex{
+        display: flex;
+        }
+        .baise{
+            background-color: rgb(255, 255, 255);
+        }
+        .flex1{
+            flex:1;
+        }
+        .column{
+            flex-direction: column;
+        }
+        .lanse{
+            background-color: blue;
+        }
+        .vip {
+        background-color: #ffffff;
+        height: 10vh;
+        font-size: 15px;
+        font-weight: bold;
+      }
+      .shadow {
+        box-shadow: rgb(0 0 0/ 20%) 0px 2px 1px -1px,
+          rgb(0 0 0/ 14%) 0px 1px 1px 0px, rgb(0 0 0/ 12%) 0px 1px 3px 0px;
+      }
+      .ml {
+        position: fixed;
+      }
+      .mg8{
+        margin: 8px;
+      }
+      .mgr8{
+        margin-right: 8px;
+      }
+      .mgt8{
+        margin-top: 8px;
+      }
+      .white{
+        background: white;
+      }
+</style>
+</head>
+<body class="flex">
+<!-- 主页栏 -->
+    <div style="width: 200px" class="">
+<!-- 头像 -->
+<div style="padding: 10px;
+align-items: center;
+justify-content: center;
+border-bottom: 1px solid #999;
+"
+class="flex baise">
+<img 
+src="http://mms1.baidu.com/it/u=1717340900,2886819514&fm=253&app=138&f=JPEG&fmt=auto&q"
+ width="50px"
+  height="50px"
+   alt="">
+   
+</div>
+<div style="padding: 6px;" class="mg8 baise">名称：入迷</div>
+<div style="padding: 6px;" class="mg8 baise">性别：男</div>
+<div style="padding: 6px;" class="mg8 baise">爱好：女</div>
+<div style="padding: 6px;" class="mg8 baise">地区：牢里</div>
+
+<div style="height: 200px;color: rgb(85, 117, 29);"class="vip mg8">个性签名：此人很帅,什么也没留下...</div>
+</div>
+<!-- 主区域 -->
+    <div class="flex1 flex column">
+<!-- 头部 -->
+    <div style= "text-align: center; background-color: #7c637e9c;
+    font-size: 30px;
+    font-weight:bold;
+    margin-left: 1px;
+    width: 100%;
+    height: 50px;" class="baise">
+    欢迎来到我的个人主页<br>
+</div>
+<!-- 内容 -->
+    <div class="flex1 flex">
+<!-- 左区 -->
+    <div style="flex: 5;"class="flex-column mg8">
+<!-- 左区内容1 -->
+    <div style="height: 320px;" class="baise">不知道写什么</div>
+<!-- 左区内容2 -->
+    <div style="height: 320px;" class="baise mgt8">不知道写什么</div>
+    </div>
+<!-- 右区 -->
+    <div style="flex:1" class="flex-column">
+<!-- 导航 -->
+    <div style="text-align: center; height: 310px;" class="baise mgr8 mgt8">哈喽<br>
+    <a href="index2.html">更多详细内容请看这里...<img src="https://img2.baidu.com/it/u=3073257325,3790402526&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=500" width="200px" height="200px" alt="哟">这里有更多关于我的内容</a>
+    </div>
+<!-- 导航 -->
+    <div style="text-align: center; height: 310px;" class="baise mgr8 mgt8 vip">
+    <img src="https://img2.baidu.com/it/u=2166529376,2524055368&fm=253&f" width="200px" height="200px" alt="">有人议论哥的帅，哥笑了，因为哥笑起来更帅<br>
+    </div>
+</body>
+</html>
